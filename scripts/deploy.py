@@ -7,7 +7,7 @@ def deploy_simple_storage():
   stored_value=x_contract.retrieve()
   print(f'Current :{stored_value}')
 
-  transaction=x_contract.store(1808,{"from":account})
+  transaction=x_contract.store(9999,{"from":account})
   transaction.wait(1)
   updated_stored_value=x_contract.retrieve() 
   print(f'Update :{updated_stored_value}')
