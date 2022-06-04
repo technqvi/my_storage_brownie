@@ -14,7 +14,7 @@ def test_updating_storage():
 
     x_contract=SimpleStorage.deploy({'from': account})
     
-    expected=100
+    expected=50
     x_contract.store(expected,{'from': account})
     assert expected==x_contract.retrieve()
     #assert 10==x_contract.retrieve()
